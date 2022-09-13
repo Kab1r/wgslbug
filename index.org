@@ -1,7 +1,7 @@
 #+title: WGSL Bug
 #+options: toc:nil num:nil
 
-* Code
+* [[./wgslbug.wgsl][Code]]
 #+begin_src wgsl -n 1 :tangle wgslbug.wgsl :exports code :shebang "//usr/bin/env wgslsmith run $@ $0 ; exit"
 @group(0)
 @binding(0)
