@@ -25,6 +25,8 @@ fn main() {
 Expected output is =[2, 1]= after executing break statement in second iteration of loop.
 
 * Results
+#+ATTR_LATEX: :environment longtable :align |l|l|p{1.5cm}|p{2cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|
+|---+--------+-----------------------+-------------------+--------------------+---------------------+---------------------+-------------------+-------------------|
 | / | <>     | <>                    | <>                | <>                 | <>                  | <>                  | <>                |                   |
 |   | Vendor | GPU                   | Dawn Vulkan Linux | wGPU Vulkan Linux  | Dawn Vulkan Windows | wGPU Vulkan Windows | Dawn DX12 Windows | wGPU DX12 Windows |
 |---+--------+-----------------------+-------------------+--------------------+---------------------+---------------------+-------------------+-------------------|
@@ -36,6 +38,9 @@ Expected output is =[2, 1]= after executing break statement in second iteration 
 |   | Intel  | i7-9700K (iGPU)       | Correct           | Inconsistent[fn:3] |                     |                     |                   |                   |
 |   | Intel  | i5-7400 (iGPU)        | Correct           | Correct            |                     |                     |                   |                   |
 |---+--------+-----------------------+-------------------+--------------------+---------------------+---------------------+-------------------+-------------------|
+
 [fn:1] Non Deterministic results where the first element is large and the second element is zero; produces correct result if either of the flow increments are removed.
+
 [fn:2] Output is =[0, 0]=, presumed to be as a result of a timeout.
+
 [fn:3] Sometimes produces correct output, other times produces =[0, 0]= without timing out.
